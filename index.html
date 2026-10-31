@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de produtos - E-commerce</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container-progess">
+            <div class="progress"></div>
+        </div>
+        
+        <h1>
+            <a href="/index.html">
+                Send<span class="tech">Tech</span>
+            </a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Página inicial</a>
+                </li>
+                <li>
+                    <a href="#informacao">Informação</a>
+                </li>
+                <li>
+                    <a href="#produtos">Produtos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="tel:+244935555500">
+            <button class="btn-header">
+                Ligar
+            </button>
+        </a>
+
+        <!-- Botão do menu mobile -->
+        <button id="btn-menu-mobile">
+            <img src="./icons/icon-hamburger.svg" alt="">
+        </button>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <div id="info">
+                <small>Encontre a tech ideal para si</small>
+
+                <h2>
+                    Produtos de qualidade só na Send<span class="tech">Tech</span>
+                </h2>
+
+                <p>
+                    Tofem cursum dolor sit amet consectetur adipisicing elit. Mollitia numquam maiores molestias delectus perferendis aperiam aspernatur suscipit ipsa inventore.
+                </p>
+
+                <div class="container-btnsHome">
+                    <div id="container-btnsHome">
+                        <button onclick="pagina_whatsapp()" class="btn-home">
+                            <img src="./icons/whatsapp-brands-solid-full.svg" alt="">
+                            WhatsApp
+                        </button>
+                        
+                        <a href="tel:+244935555500">
+                            <button class="btn-home">Ligue para nós</button>
+                        </a>
+                    </div>
+
+                    <!-- Botão flutuante para mobile -->
+                    <button class="btn-flutuante-mobile">
+                        CLICK
+                    </button>
+                </div>
+            </div>
+
+            <div id="img-home">
+                <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Informação -->
+        <section id="informacao">
+            <div id="border">
+                <h2>Encontre o produto ideal</h2>
+            </div>
+
+            <p>
+                Explore os diversos <strong>produtos</strong> de qualidade da <strong>SendTech</strong>.
+                Preços baixos e confiaveis, compre mais e poupa mais, korem ipsum, dolor sit amet consectetur adipisicing elit. Omnis perspiciatis voluptatem id eaque recusandae alias, necessitatibus amet nemo quis et ipsum exercitationem maxime atque quasi excepturi. Labore expedita atque itaque!
+            </p>
+
+            <p>
+                Asit amet consectetur, adipisicing elit. Incidunt fugiat laudantium deserunt amet. Quasi quo ex cupiditate sed architecto minus tenetur! Distinctio ut reiciendis odit soluta dicta repudiandae praesentium ad.
+                Prodem ipsum, dolor sit amet consectetur adipisicing elit. Iusto distinctio suscipit, tempore earum nam recusandae! Perferendis nostrum voluptate, velit, soluta veniam impedit optio, podes encontrar-nos também nestas redes sociais:  <strong><a href="https://whatsapp.com/sendtech">Whatsapp</a> - <a href="https://instagram.com/sendtech">Instagram</a> - <a href="https://facebook.com/sendtech">Facebook</a></strong>.
+            </p>
+        </section>
+
+        <!-- Produtos -->
+        <section id="produtos">
+            <!-- Área de produtos -->
+            <div id="container-produtos">
+                <h2>Produtos</h2>
+
+                <div class="container-cards">
+                    <!-- Produto 1 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <div class="nenhuma-imagem">
+                                Send<span class="tech">Tech</span>
+                            </div>
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3> - - - - - - - - - </h3>
+
+                            <span id="info-produto">
+                                Produto esgotado
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">00.00kz</span>
+                                <span id="preco-anterior">00.00kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto()" class="btn-comprarProduto" disabled>
+                                Indisponível
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>Lenovo Thinkpad</h3>
+
+                            <span id="info-produto">
+                                PC Lenovo Thinkpad - iCore 5 da 8ª geração, 2 SSD. 6 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">400.000kz</span>
+                                <span id="preco-anterior">500.000kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Lenovo Thinkpad','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andrey-matveev-ekiRuzxdWYA-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>16GB DD4</h3>
+
+                            <span id="info-produto">
+                                Memória RAM - iCore 5 da 8ª geração, 2 SSD. 6 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">15.000kz</span>
+                                <span id="preco-anterior">17.000kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Nome do produto','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <div class="nenhuma-imagem">
+                                Send<span class="tech">Tech</span>
+                            </div>
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3> - - - - - - - - - </h3>
+
+                            <span id="info-produto">
+                                Produto esgotado
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">00.00kz</span>
+                                <span id="preco-anterior">00.00kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto()" class="btn-comprarProduto" disabled>
+                                Indisponível
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andrey-matveev-pfKnGfJrrjI-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>SSD de 128GB</h3>
+
+                            <span id="info-produto">
+                                Memória SSD - iCore 5 da 8ª geração, 2 SSD. 6 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">60.500kz</span>
+                                <span id="preco-anterior">70.000kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Nome do produto','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>Lenovo Thinkpad</h3>
+
+                            <span id="info-produto">
+                                PC Lenovo Thinkpad - iCore 5 da 8ª geração, 2 SSD. 6 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">400.000kz</span>
+                                <span id="preco-anterior">500.000kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Nome do produto','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 7 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>Computador HP</h3>
+
+                            <span id="info-produto">
+                                PC HP - iCore 5 da 8ª geração, 2 SSD. 6 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">600.600kz</span>
+                                <span id="preco-anterior">700.00kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Nome do produto','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 8 -->
+                    <div class="card-produtos">
+                        <!-- Fotografia do produto -->
+                        <div class="imagem-produto">
+                            <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                        </div>
+
+                        <!-- Informação do produto -->
+                        <div class="area-info-produto">
+                            <h3>PC DELL</h3>
+
+                            <span id="info-produto">
+                                PC DELL - iCore 5 da 5ª geração, 2 SSD. 8 de núcleo e muito mais.
+                            </span>
+
+                            <div class="preco-produto">
+                                <span id="preco-atual">500.800kz</span>
+                                <span id="preco-anterior">700.000kz</span>
+                            </div>
+
+                            <!-- Botão para comprar o respectivo produto -->
+                            <button onclick="comprar_produto('Nome do produto','PC Lenovo Thinkpad - iCore 5 da 8ª geração','400.000kz','500.000kz')" class="btn-comprarProduto">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Modal menu mobile -->
+        <div id="modal-menu-mobile">
+            <nav id="nav-menu-mobile">
+                <h2>
+                    <div id="menu-title">Send<span class="tech">Tech</span></div>
+
+                    <button id="btn-close-menu-mobile">
+                        <img src="./icons/icon-close-white.svg" alt="">
+                    </button>
+                </h2>
+
+                <ul>
+                    <li class="active">
+                        <a href="#home">Página inicial</a>
+                    </li>
+                    <li>
+                        <a href="#informacao">Informação</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <div id="container-footer">
+            <h2>
+                <a href="">
+                    Send<span class="tech">Tech</span>
+                </a>
+            </h2>
+
+            <!-- Contatos -->
+            <div id="container-contatos">
+                <h3>Contatos</h3>
+
+                <div id="contatos">
+                    <p>+244 935-555-500</p>
+                    <p>sendtech321@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Links rápidos -->
+            <nav id="links">
+                <h3>Links rápidos</h3>
+
+                <ul>
+                    <li>
+                        <a href="#home">Página inicial</a>
+                    </li>
+                    <li>
+                        <a href="#informacao">Informação</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="copyRight">
+            &copy; 2026 SendTech - Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="./javascript/comprar-produto.js"></script>
+    <script src="./javascript/scroll-sections.js"></script>
+    <script src="./javascript/btn-click-mobile.js"></script>
+    <script src="./javascript/progress.js"></script>
+    <script src="./javascript/menu-mobile.js"></script>
+</body>
+</html>

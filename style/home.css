@@ -1,0 +1,222 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #000;
+}
+
+#home > #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 600px;
+}
+
+#home > #info > small {
+    display: flex;
+    align-items: center;
+    color: #2e7dd8;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    width: fit-content;
+}
+
+#home > #info > small::after {
+    content: '';
+    width: 28px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #2e7dd8;
+}
+
+#home > #info > small::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    background-color: #2e7dd8;
+}
+
+#home > #info > h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home > #info > p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+
+/* Área de botões na section home */
+#home > #info > .container-btnsHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    height: 180px;
+    z-index: 1;
+}
+
+#home > #info > .container-btnsHome > #container-btnsHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#home > #info > .container-btnsHome > #container-btnsHome > .btn-home,
+#home > #info > .container-btnsHome > #container-btnsHome > a > .btn-home {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    height: 44px;
+    padding: 10px;
+    background-color: #2e7dd8;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+
+    img {
+        width: 30px;
+    }
+}
+
+/* Área da imagem na home */
+#home > #img-home {
+    display: none;
+}
+
+/* Botão flutuante para mobile */
+#home > #info > .container-btnsHome > .btn-flutuante-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+#home > #info > .container-btnsHome > .btn-flutuante-mobile::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #2e7dd8;
+    z-index: -1;
+    animation: pulso 2s linear infinite;
+}
+
+@keyframes pulso {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: -1;
+    }
+}
+
+@media (min-width: 768px) {   
+    #home {
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    #home > #info {
+        align-items: start;
+        gap: 20px;
+    }
+
+    #home > #info > h2 {
+        text-align: start;
+        font-size: 3.2rem;
+    }
+
+    #home > #info > p {
+        text-align: start;
+        font-size: 14px;
+    }
+
+    /* Área de botões na section home */
+    #home > #info > .container-btnsHome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+        width: 100%;
+    }
+
+    #home > #info > .container-btnsHome > #container-btnsHome {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+
+    #home > #info > .container-btnsHome > #container-btnsHome > .btn-home,
+    #home > #info > .container-btnsHome > #container-btnsHome > a > .btn-home {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: fit-content;
+        height: 40px;
+        padding: 10px;
+        background-color: #2e7dd8;
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        border-radius: 8px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    /* Botão flutuante para mobile */
+    #home > #info > .container-btnsHome > .btn-flutuante-mobile {
+        display: none;
+    }
+
+    /* Área da imagem na home */
+    #home > #img-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 450px;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 32px;
+        /* box-shadow: 0 0 15px rgba(46, 125, 216, 0.89); */
+    }
+
+    #home > #img-home > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

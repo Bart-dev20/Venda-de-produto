@@ -1,0 +1,41 @@
+#informacao {
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#informacao > #border {
+    border-top: 5px solid #2e7dd8;
+    width: 150px;
+}
+#informacao > #border > h2 {
+    color: #2e7dd8;
+    width: 300px;
+    padding-top: .5rem;
+}
+
+#informacao > p {
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-size: 15px;
+    letter-spacing: .5px;
+
+    a {
+        color: #007bff;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 768px) {
+    #informacao > #border {
+        border-top: 4px solid #2e7dd8;
+        width: 150px;
+    }
+
+    #informacao > #border > h2 {
+        font-size: 21px;
+    }
+
+    #informacao > p {
+        font-size: 14px;
+    }
+}

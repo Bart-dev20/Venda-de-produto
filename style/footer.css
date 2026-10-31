@@ -1,0 +1,92 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding: 30px 1rem 20px;
+    background-color: #000;
+    margin-top: 8rem;
+}
+
+footer > #container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+}
+
+footer > #container-footer > h2 > a {
+    color: #fff;
+}
+
+/* Contatos */
+footer > #container-footer > #container-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer > #container-footer > #container-contatos > h3,
+footer > #container-footer > #links > h3 {
+    color: #2e7dd8;
+}
+
+footer > #container-footer > #container-contatos > #contatos > p {
+    color: #fff;
+}
+
+footer > #container-footer > #container-contatos > #contatos,
+footer > #container-footer > #links > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* Links rápidos */
+footer > #container-footer > #links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > #container-footer > #links > ul > li > a {
+    font-size: 14px;
+    color: #fff;
+    transition: all .3s;
+}
+
+footer > #container-footer > #links > ul > li:hover {
+    color: #2e7dd8;
+    list-style: disc;
+}
+
+footer > #container-footer > #links > ul > li:hover > a {
+    color: #2e7dd8;
+    text-decoration: underline;
+}
+
+footer > #copyRight {
+    text-align: center;
+    color: #686767dd;
+    width: 100%;
+    padding: 20px 0 5px;
+    font-size: 13px;
+    border-top: 1px solid #1c1c1c;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 20px 5rem;
+    }
+
+    footer > #container-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer > #copyRight {
+        font-size: 14px;
+    }
+}

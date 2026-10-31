@@ -1,0 +1,97 @@
+#modal-menu-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 764px) {
+    #modal-menu-mobile {
+        display: none;
+        justify-content: flex-end;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 100;
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.377);
+    }
+    #modal-menu-mobile.abrir-menu-mobile {
+        display: flex;
+    }
+    
+    #modal-menu-mobile > #nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #fff;
+        border-radius: 20px 0 0 20px;
+        width: 250px;
+        height: 100vh;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.301);
+        padding: 1rem 1rem 1rem;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        transition: right .3s;
+    }
+
+    #modal-menu-mobile.abrir-menu-mobile > #nav-menu-mobile {
+        right: 0;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #dddd;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > h2 > #btn-close-menu-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        background-color: #2e7dd8;
+        border-radius: 50%;
+        border: none;
+        padding: 9px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul > li {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul > li.active {
+        background-color: #2e7dd8;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul > li:hover:not(.active) {
+        background-color: #e9e9e9;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul > li > a {
+        color: #000;
+        font-size: 14px;
+    }
+
+    #modal-menu-mobile > #nav-menu-mobile > ul > li.active > a {
+        font-weight: 600;
+        color: #fff;
+    }
+}

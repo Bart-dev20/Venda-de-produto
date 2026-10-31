@@ -1,0 +1,122 @@
+#produtos {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+}
+
+/* Área de produtos */
+#produtos > #container-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#produtos > #container-produtos > h2 {
+    border-bottom: 1px solid #dddd;
+    padding-bottom: 1.5rem;
+}
+
+#produtos > #container-produtos > .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px 23px;
+}
+
+#produtos > #container-produtos > .container-cards > .card-produtos {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 420px;
+    border: 1px solid #dddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #e3ecf7;
+
+    .imagem-produto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 180px;
+        /* border-bottom: 1px solid #dddd; */
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    /* Informação do produto */
+    .area-info-produto {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 240px;
+        padding: 15px 17px;
+        background-color: #fff;
+
+        h3 {
+            font-size: 17px;
+            height: 50px;
+        }
+
+        #info-produto {
+            font-size: 14px;
+            line-height: 1.5;
+            height: 60px;
+        }
+
+        /* Área de preços */
+        .preco-produto {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            height: 40px;
+
+            /* Preço atual */
+            #preco-atual {
+                font-weight: bold;
+                font-size: 16px;
+                color: #2e7dd8;
+            }
+
+            /* Desconto */
+            #preco-anterior {
+                color: #7c7c7c;
+                font-size: 13px;
+                text-decoration: line-through;
+            }
+        }
+
+        /* Botão de realizar a comprar */
+        .btn-comprarProduto {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #2e7dd8;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: .5rem;
+            cursor: pointer;
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #produtos > #container-produtos > .container-cards {
+        justify-content: center;
+        gap: 50px 23px;
+    }
+}

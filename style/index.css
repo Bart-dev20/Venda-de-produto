@@ -1,0 +1,44 @@
+@import url('./header.css');
+@import url('./home.css');
+@import url('./informacao.css');
+@import url('./produtos.css');
+@import url('./modal-menu-mobile.css');
+@import url('./footer.css');
+
+@font-face {
+    font-family: 'font';
+    src: url('../font/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'font', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.tech {
+    color: #2e7dd8;
+    font-weight: 850;
+}
+
+section {
+    padding: 10px 1rem;
+    scroll-margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 10px 5rem;
+    }
+}
